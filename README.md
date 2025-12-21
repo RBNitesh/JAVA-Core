@@ -1,1 +1,1 @@
-# JAVA-Core
+# This repo contains the Core JAVA concepts
