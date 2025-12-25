@@ -2,6 +2,10 @@ package Iheritance;
 
 public class Main {
     public static void main(String[] args) {
-        AmbhibiousVehicles obj = new AmbhibiousVehicles();
+        // multiple inheritance
+        // AmbhibiousVehicles obj = new AmbhibiousVehicles();
+
+        // use of super keyword
+        ParentClass obj = new ChildClass();
     }
 }
