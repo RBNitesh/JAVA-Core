@@ -1,0 +1,14 @@
+Q. How does JVM Handle an Exception?
+
+Ans- When an exception occurs, the JVM creates an exception object, halts normal execution, and performs stack unwinding to locate a matching catch block based on exception type. If found, control transfers to the handler; otherwise, the default exception handler prints the stack trace and terminates the thread, with finally blocks executed during unwinding.
+
+
+
+
+
+
+
+
+
+
+
