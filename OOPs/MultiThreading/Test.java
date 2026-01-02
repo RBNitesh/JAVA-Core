@@ -15,6 +15,7 @@ class B implements Runnable {
 
 public class Test {
     public static void main(String[] args) {
+
         Thread t1 = new Thread(new A());
         Thread t2 = new Thread(new B());
 
