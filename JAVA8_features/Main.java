@@ -29,6 +29,7 @@ public class Main {
             A a = (A) o;
             System.out.println(a.name);
         }
+
     }
 
     static class A {
