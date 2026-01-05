@@ -1,5 +1,19 @@
 import java.util.*;
 
+class Number {
+    private int a;
+
+    Number(int a) {
+        this.a = a;
+    }
+}
+
+class EvenNumber extends Number {
+    EvenNumber(int a) {
+        super(a);
+    }
+}
+
 public class Main{
     public static void main(String[] args) {
         List<Integer> li = Arrays.asList(1, 2, 3, 4);
@@ -11,6 +25,15 @@ public class Main{
 
         System.out.println(sumOf3(li));
         // System.out.println(sumOf3(ld)); // this is not allowed
+
+        List<EvenNumber> le = new ArrayList<>();
+        List<? super Number> ln = new ArrayList<>();
+        // this is valid with both upper bound and lower bound
+        ln.add(null); // this is valid
+
+        // But, these two is only valid with lower bound
+        ln.add(new Number(5)); 
+        ln.add(new EvenNumber(5));
     }
     
     // Upper Bounded WildCards
