@@ -32,10 +32,23 @@ public class Main{
         ln.add(null); // this is valid
 
         // But, these two is only valid with lower bound
-        ln.add(new Number(5)); 
+        ln.add(new Number(5));
         ln.add(new EvenNumber(5));
+
+        // WildCapture Capture Example
+        helper(le);
     }
     
+    // WildCapture Capture Example
+    private static void helper(List<?> lst) {
+        // lst.set(0, lst.get(0)); // this will give the compile time error
+        swapNumber(lst); // this is perfectly fine
+    }
+
+    private static <T> void swapNumber(List<T> lst) {
+        lst.set(0, lst.get(0));
+    }
+
     // Upper Bounded WildCards
     public static double sumOf1(List<? extends Number> lst) {
         double sum = 0;
