@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("It's running...");
 
-        findSum fs = (int a, int b)->{
+        findSum fs = (a, b)->{
             return a + b;
         };
 
