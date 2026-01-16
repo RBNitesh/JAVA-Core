@@ -16,6 +16,7 @@ import java.util.*;
 
 public class Main{
     public static void main(String[] args) {
+
         List<Integer> li = Arrays.asList(1, 2, 3, 4);
         // System.out.println(sumOf1(li));
         // sumOf2(li);
