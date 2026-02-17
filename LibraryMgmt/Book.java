@@ -9,6 +9,7 @@ public class Book{
     public Book() {
         System.out.println("Enter serial number of book: ");
         this.sNo = in.nextInt();
+        in.nextLine();
 
         System.out.println("Enter book name: ");
         this.bookName = in.nextLine();

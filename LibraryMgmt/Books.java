@@ -70,6 +70,8 @@ public class Books {
 
     public void showAllBooks() {
         System.out.println("\t\t\t\t\tShow All Books");
+        System.out.println(
+            "S.No\t\tName\t\tAuthor\t\tAvailable Qty\t\tTotal Qty");
         for (int i = 0; i < count; i++) {
             Book b = theBooks[i];
             printBook(b);
