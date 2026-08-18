@@ -25,7 +25,7 @@ public class SimpleHttpServer{
     // Define a custom HttpHandler
     public static class MyHandler implements HttpHandler{
         @Override
-        public void handle(HttpExchange exchange) throws IOException{
+        public void handle(HttpExchange exchange) throws IOException {
             // Handle the request
             String response = "Hello, this is a simple http server response!";
             exchange.sendResponseHeaders(200, response.length());
