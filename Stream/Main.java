@@ -1,6 +1,6 @@
-package StreamInJava;
+
 import java.util.*;
-import java.util.function.
+import java.util.function.*;
 import java.util.stream.Collectors;
 
 public class Main {
@@ -63,6 +63,7 @@ public class Main {
         //BiPredicate, BiConsumer,  BiFunction
         BiPredicate<Integer, Integer> isEven2 = (x, y) -> (x + y) % 2 == 0;
         System.out.println(isEven2.test(4, 5));
+
         BiConsumer<Integer,String> biConsumer = (x, y) -> {
             System.out.println(x);
             System.out.println(y);
